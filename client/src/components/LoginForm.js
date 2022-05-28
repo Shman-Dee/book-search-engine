@@ -1,43 +1,43 @@
 // see SignupForm.js for comments
-import React, { useState } from "react";
-import { Form, Button, Alert } from "react-bootstrap";
+import React, { useState } from 'react'
+import { Form, Button, Alert } from 'react-bootstrap'
 
-import Auth from "../utils/auth";
-import { useMutation } from "@apollo/client";
-import { LOGIN_USER } from "../utils/mutations";
+import Auth from '../utils/auth'
+import { useMutation } from '@apollo/client'
+import { LOGIN_USER } from '../utils/mutations'
 
 const LoginForm = () => {
-  const [userFormData, setUserFormData] = useState({ email: "", password: "" });
-  const [validated] = useState(false);
-  const [showAlert, setShowAlert] = useState(false);
+  const [userFormData, setUserFormData] = useState({ email: '', password: '' })
+  const [validated] = useState(false)
+  const [showAlert, setShowAlert] = useState(false)
 
   // initialize mutation
-  const [loginUser, { error }] = useMutation(LOGIN_USER);
+  const [loginUser, { error }] = useMutation(LOGIN_USER)
 
   const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setUserFormData({ ...userFormData, [name]: value });
-  };
+    const { name, value } = event.target
+    setUserFormData({ ...userFormData, [name]: value })
+  }
 
   const handleFormSubmit = async (event) => {
-    event.preventDefault();
+    event.preventDefault()
 
     try {
       const { data } = await loginUser({
         variables: { ...userFormData },
-      });
-      Auth.login(data.login.token);
+      })
+      Auth.login(data.login.token)
     } catch (e) {
-      console.error(e);
-      setShowAlert(true);
+      console.error(e)
+      setShowAlert(true)
     }
 
     setUserFormData({
-      username: "",
-      email: "",
-      password: "",
-    });
-  };
+      username: '',
+      email: '',
+      password: '',
+    })
+  }
 
   return (
     <>
@@ -88,7 +88,7 @@ const LoginForm = () => {
         </Button>
       </Form>
     </>
-  );
-};
+  )
+}
 
-export default LoginForm;
+export default LoginForm
