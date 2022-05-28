@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client'
+import { gql } from "@apollo/client";
 
 // mutation for logged in user
 export const LOGIN_USER = gql`
@@ -21,7 +21,7 @@ export const LOGIN_USER = gql`
       }
     }
   }
-`
+`;
 
 // mutation to add user
 export const ADD_USER = gql`
@@ -44,7 +44,7 @@ export const ADD_USER = gql`
       }
     }
   }
-`
+`;
 
 // mutation to save books
 export const SAVE_BOOK = gql`
@@ -63,7 +63,7 @@ export const SAVE_BOOK = gql`
       }
     }
   }
-`
+`;
 
 // mutation to remove books
 export const REMOVE_BOOK = gql`
@@ -83,4 +83,4 @@ export const REMOVE_BOOK = gql`
       }
     }
   }
-`
+`;

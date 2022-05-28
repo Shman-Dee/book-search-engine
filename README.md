@@ -1,60 +1,54 @@
-# book-search-engine
+<div id="top"></div>
+    <h3 align="center">Book Search Engine</h3>
 
-### Technical Acceptance Criteria: 40%
+## License
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-	* Has an Apollo Server that uses GraphQL queries and mutations to fetch and modify data, replacing the existing RESTful API.
+## Description
 
-	* Use an Apollo Server and apply it to the Express.js server as middleware.
+This is an app that was built with GraphQL. The app uses the Google Books API and allows users to search for a book and then save books to a list.
 
-	* Include schema settings for resolvers and typeDefs as outlined in the homework instructions.
+## Table of Contents
 
-	* Modify the existing authentication middleware to work in the context of a GraphQL API.
+- [License](#license)
+- [Description](#description)
+- [Table of Contents](#table-of-contents)
+- [Installation Instructions](#installation-instructions)
+- [Usage](#usage)
+- [Contributors](#contributors)
+- [Testing](#testing)
+- [Questions](#questions)
 
-	* Use an Apollo Provider so that the application can communicate with the Apollo Server.
+  <p align="right">(<a href="#top">back to top</a>)</p>
 
-	* Application must be deployed to Heroku.
+## Installation Instructions
 
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-
-* User interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
+  <ul><li>Clone this repository from the command line</li><li>Change (cd) into the new directory</li><li>From the command line, run <code>npm i</code>.  This will install packages for the client and server.</li><li>From the command line run <code>npm run develop</code> to start both the backend and frontend servers</li></ul>
+  
+  <p align="right">(<a href="#top">back to top</a>)</p>
+  
+  ## Usage
 
 
-### Repository Quality: 13%
+This app will allow users to search for a book. All books with similar titles will be displayed showing the book title, cover image, description, and author(s). If the user is logged in, they can click the Save this book button and the book will be saved to the users's saved books list.
 
-* Repository has a unique name.
+  <p align="right">(<a href="#top">back to top</a>)</p>
+  
+    
+  ## Contributors
+ my buddies steve and justin
 
-* Repository follows best practices for file structure and naming conventions.
+  <p align="right">(<a href="#top">back to top</a>)</p>
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+## Testing
 
-* Repository contains multiple descriptive commit messages.
+NA
 
-* Repository contains high-quality README file with description, screenshot, and link to the deployed application.
+  <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Questions
 
-## Review
+Email: [andy@andy.com](andy@andy.com)
 
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
+  <p align="right">(<a href="#top">back to top</a>)</p>
