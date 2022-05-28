@@ -30,6 +30,7 @@ This is an app that was built with GraphQL. The app uses the Google Books API an
   
   ## Usage
 
+![screenshot](https://drive.google.com/file/d/1MD-dcpcBI_z43lkCGVGAFIITKO295iAp/view?usp=sharing)
 
 This app will allow users to search for a book. All books with similar titles will be displayed showing the book title, cover image, description, and author(s). If the user is logged in, they can click the Save this book button and the book will be saved to the users's saved books list.
 
